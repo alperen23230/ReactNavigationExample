@@ -51,7 +51,7 @@ const App = () => {
     createBottomTabs = () => {
       return(
         <MaterialBottomTabs.Navigator>
-          <MaterialBottomTabs.Screen name="Tab 1" component={Tab1} />
+          <MaterialBottomTabs.Screen name="Tab 1" children={createTopTabs} />
           <MaterialBottomTabs.Screen name="Tab 2" component={Tab2} />
           <MaterialBottomTabs.Screen name="Tab 3" component={Tab3} />
         </MaterialBottomTabs.Navigator>
